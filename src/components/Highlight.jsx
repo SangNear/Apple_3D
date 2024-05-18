@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
+import VideoCarousel from "./VideoCarousel";
 
 const Highlight = () => {
   useGSAP(() => {
@@ -14,7 +15,7 @@ const Highlight = () => {
   return (
     <section id="highlights" className="h-full w-screen bg-zinc common-padding">
       <div className="screen-max-width">
-        <div className="w-full flex mb-12 items-end justify-between">
+        <div className="w-full flex mb-12 items-end justify-between max flex-wrap">
           <h1
             id="title"
             className="text-gray font-medium lg:text-6xl md:text-5xl text-3xl "
@@ -26,6 +27,7 @@ const Highlight = () => {
             <p className="link">watch the event</p>
           </div>
         </div>
+        <VideoCarousel/>
       </div>
     </section>
   );
