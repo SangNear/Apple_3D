@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
-import React from 'react'
-import { playImg } from '../utils'
-
-const Highlight = () => {
-  useGSAP(() => {
-    gsap.to('#title', { opacity: 1, y: -50, duration: 1 })
-  }, [])
-  return (
-    <section id='highlights' className='w-screen overflow-hidden h-full common-padding bg-zinc'>
-      
-    </section>
-  )
-}
-=======
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
@@ -47,6 +30,5 @@ const Highlight = () => {
     </section>
   );
 };
->>>>>>> 574dfc2743cca7bd1575f7eaeb8c03031c486804
 
 export default Highlight;
